@@ -6,3 +6,8 @@ Wyświetl tylko imię i nazwisko wszystkich uczniów z klasy 1A posortuj po nazw
 
 SELECT surname,name, class_id FROM students
 Wyświetl imię, nazwisko, klasę wszystkich uczniów, łącznie z uczniami którzy nie mają jeszcze przydzielonej klasy.
+
+SELECT * from subjects
+left JOIN teachers_subjects
+on subjects.subject_id = teachers_subjects.subject_id
+Używajać LEFT JOIN wyświetl wszystkie nazwy przedmiotów i teacher_id, nawet jeżeli przedmiot nie ma przypisanego teacher_id
