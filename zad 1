@@ -3,3 +3,6 @@ where class_id = 1
 ORDER BY surname DESC, name ASC
 
 Wyświetl tylko imię i nazwisko wszystkich uczniów z klasy 1A posortuj po nazwisku malejąco, imieniu rosnąco
+
+SELECT surname,name, class_id FROM students
+Wyświetl imię, nazwisko, klasę wszystkich uczniów, łącznie z uczniami którzy nie mają jeszcze przydzielonej klasy.
